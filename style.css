@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Istok+Web');
+body {
+  line-height: initial;
+  font-family: 'Istok Web', sans-serif;
+}
+header {
+  position: relative;
+}
+.hero-image {
+  display: inline-block;
+  position: relative;
+}
+.hero-text-container {
+  text-align: center;
+  top: 0;
+  position: absolute;
+  width: 100%;
+}
+.hero-text{
+  margin: 100px auto;
+}
+.hero-text, .action {
+  font-family: 'Istok Web';
+  color: white;
+  font-size: 32px;
+  text-transform: uppercase;
+  max-width: 800px;
+}
 section {
   display: flex;
   flex-direction: column;
@@ -10,8 +38,8 @@ section.description h1 {
   margin: 0 auto;
   color: #a2a3a6;
 }
-section.services .button {
-  margin: 42px 0;
+section.services {
+  padding: 56px 0;
 }
 section.rendez-vous {
   background: #85909B;
@@ -81,15 +109,22 @@ h2:after {
 .light.gray.background {
   background: #F8F8F8;
 }
+.medium.gray.background {
+  background: #85909B;
+}
+.rv-logo {
+  border-radius: 50%;
+}
 .ui.cards>.card>.image {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.ui.cards>.card>.image>img {
+.ui.cards>.card>.image>img,
+.professionnel-portrait img {
   border-radius: 50%;
-  width: 248px;
   margin: 0 auto;
+  width: initial;
 }
 /* semantic-ui overrides */
 .ui.secondary.pointing.menu {
@@ -97,4 +132,28 @@ h2:after {
 }
 .ui.basic.button.white {
   background: white!important;
+}
+.large-width {
+  max-width: 1200px;
+  margin: 0 auto!important;
+}
+.medium-width {
+  max-width: 800px;
+  margin: 0 auto!important;
+}
+.professionel-nom {
+  font-size: 3em;
+  color: #333333;
+  font-family: 'Dosis', sans-serif;
+}
+.description-sommaire {
+  font-size: 1.4em;
+  font-family: 'Dosis', sans-serif;
+  margin-bottom: 32px;
+}
+.professionnel-portrait {
+  padding-bottom: 56px;
+}
+.professionnel-description {
+  padding: 56px 0;
 }
